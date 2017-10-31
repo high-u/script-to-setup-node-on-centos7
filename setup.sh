@@ -25,7 +25,7 @@ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/dock
 sudo yum makecache fast
 yum list docker-ce.x86_64 --showduplicates
 read -p "docker version (ex. 17.09.0.ce-1.el7.centos): " dv
-sudo yum install docker-ce-${dv}
+sudo yum install -y docker-ce-${dv}
 sudo systemctl enable docker
 sudo systemctl start docker
 
