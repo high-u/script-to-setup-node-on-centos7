@@ -43,7 +43,7 @@ echo "npm "$(npm -v)
 echo "docker "$(docker --version)
 node ~/node-red/node_modules/node-red/red.js --help
 echo ""
-echo -e 'ex. \e[44m pm2 start ~/node-red/node_modules/node-red/red.js -u ~/node-red/user-settings -p 1880 \e[m'
+echo -e 'ex. \e[44m pm2 start ~/node-red/node_modules/node-red/red.js -- -u ~/node-red/user-settings -p 1880 \e[m'
 echo ""
 
 # output message
